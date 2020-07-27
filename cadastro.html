@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" type="imagem/png" href="img/logo.png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/general.css">
+    <!--JS-->
+    <script src="script/cadastro.js"></script>
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--JS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class=".container-fluid">
+        <!--NAVBAR-->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                        <a class="navbar-brand" href="entrar.html" id="logo-nav">APPLEPSY</a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button type="button" class="btn btn-light"
+                                onclick="location. href='cadastro.html'">Cadastro</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 id="letraCdastro">Faça seu Cadastro</h2>
+            </div>
+        </div>
+
+        <!--FORMULARIO-->
+        <div class="row">
+            <div class="col-12">
+                <form id="formulario">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control">
+                                <option selected>Escolher...</option>
+                                <option>São Paulo</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Bahia</option>
+                                <option>Amazonia</option>
+                                <option>Pernanbuco</option>
+                                <option>Minas Gerais</option>
+                                <option>Santa Catarina</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Lembrar
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-dark" id="botaoEnviar"
+                        onclick="location. href='applepsy.html'">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--RODAPE-->
+    <footer class="footer" style="background: #303030;">
+        <div class="row" id="letra-footer">
+            <p class="rights">&copy copyright 2020 AppLepsy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Consultas</title>
+    <link rel="icon" type="imagem/png" href="img/logo.png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/fichaMed.css">
+    <link rel="stylesheet" href="css/general.css">
+    <!--JS-->
+    <script src="script/fichaMed.js.js"></script>
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--JS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class=".container-fluid">
+        <!--NAVBAR-->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                        <a class="navbar-brand" href="applepsy.html" id="logo-nav">APPLEPSY</a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="applepsy.html" id="letra-nav">Home<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="historico.html" id="letra-nav">Histórico</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" id="letra-nav">
+                                    Cadastros
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="fichaMed.html">Ficha Médica</a>
+                                    <a class="dropdown-item" href="medicacao.html">Medicações</a>
+                                    <a class="dropdown-item" href="contato.html">Contatos</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button type="button" class="btn btn-alert" id="botao-sair"
+                                onclick="location. href='entrar.html'">SAIR</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--TITULO-->
+        <div class="row">
+            <div class="col-12">
+                <h1 id="titulo-pagina">Histórico de Consultas</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--FORMULARIO-->
+            <div class="col-md-6">
+                <form id="formulario">
+                    <div class="form-row">
+                        <div class="col-md-5 mb-3">
+                            <label for="validationServer01">Especialista</label>
+                            <input type="text" class="form-control" id="validationServer01" required>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="validationServer02">Data da Consulta</label>
+                            <input type="date" class="form-control" id="validationServer02" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Descrição</label>
+                        <textarea class="form-control" rows="8" id="descricao"></textarea>
+                    </div>
+
+                    <input class="btn btn-dark" type="submit" value="Enviar" id="btn-enviar">
+                </form>
+            </div>
+            
+            <!--TABLE-->
+            <div class="col-md-6">
+                <div class="form-group" id="tabela-consultas">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Especialista</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Descrição</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Neurologista</td>
+                            <td>02/05/2020</td>
+                            <td>Foi solicitado realizar ressonância magnética</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--RODAPE-->
+    <footer class="footer" style="background: #303030;">
+        <div class="row" id="letra-footer">
+            <p class="rights">&copy copyright 2020 AppLepsy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

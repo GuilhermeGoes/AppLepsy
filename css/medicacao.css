@@ -1,0 +1,30 @@
+body {
+    background-color: #da76f34f !important;
+}
+
+#titulo-pagina {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+    color: #4b3666;
+}
+
+#tabela-medicacao {
+    width: 90%;
+    margin-top: 50px;
+}
+
+#formulario {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#descricao {
+    width: 83%;
+}
+
+#btn-enviar {
+    width: 150px;
+    margin-left: 160px;
+    color: #00a1a1;
+}

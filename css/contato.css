@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(245, 0, 0, 0.219) !important;
+}
+
+#imgContato {
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 50px;
+    position: relative;
+    left: 450px;
+}
+
+#contato {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+#form1 {
+    width: 450px;
+    position: relative;
+    left: 450px;
+    margin-left: -10px;
+    margin-top: 30px;
+}
+
+#botaoEnviar {
+    position: relative;
+    left: 200px;
+}

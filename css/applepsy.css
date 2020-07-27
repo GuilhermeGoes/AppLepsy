@@ -1,0 +1,38 @@
+body {
+    background-color: #00b7b76c !important;
+}
+
+#botaoCadastro {
+    position: relative;
+    left: 1150px;
+}
+
+#imagem {
+    float: right;
+}
+
+#escudo {
+    height: 325px;
+    width: 325px;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+#botao-centro{
+    background-color:transparent;
+    border: none;
+    outline:none;
+    display:block;
+    height:350px;
+    width:300px;
+    cursor:pointer;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+ }
+
+ #letra-botao {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: 150px;
+ }

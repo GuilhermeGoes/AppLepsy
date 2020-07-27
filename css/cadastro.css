@@ -1,0 +1,29 @@
+body {
+    background-color: #00b7b76c !important;
+}
+
+#letraCdastro {
+    width: 300px;
+    position: relative;
+    left: 450px;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 39px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #004747;
+}
+
+#formulario {
+    width: 500px;
+    position: relative;
+    left: 450px;
+    margin-left: -25px;
+    margin-top: 30px;
+}
+
+#botaoEnviar {
+    position: relative;
+    left: 225px;
+    color: #00b7b7;
+}
+
