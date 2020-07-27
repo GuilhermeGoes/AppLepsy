@@ -29,3 +29,7 @@ body {
     left: 225px;
     color: #00b7b7;
 }
+
+.style-footer {
+    background: #303030 !important;
+}
